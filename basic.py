@@ -14,3 +14,9 @@ roll = random.randint(1, 6)
 print(roll)
 roll = random.randint(1, 6)
 print(roll)
+
+# Roll a dice - loop
+# Don't need to import random again
+for i in range(5):
+    loop_roll = random.randint(1, 6)
+    print(loop_roll)
