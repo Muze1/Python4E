@@ -20,3 +20,10 @@ print(roll)
 for i in range(5):
     loop_roll = random.randint(1, 6)
     print(loop_roll)
+
+# Conditional or if statements
+num = 5
+if num > 10:
+    print("Okay, good work!")
+else:
+    print("Oh no...")
