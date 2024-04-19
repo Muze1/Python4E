@@ -27,3 +27,7 @@ if num > 10:
     print("Okay, good work!")
 else:
     print("Oh no...")
+
+# Ternary Operator
+num2 = 10
+print("It works!") if num2 >= 10 else print("Maybe next time...")
