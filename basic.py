@@ -1,4 +1,4 @@
-# Basic stuffs
+# Basic Python stuffs
 msg = "Hello World"
 print(msg)
 
