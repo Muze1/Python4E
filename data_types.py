@@ -79,3 +79,22 @@ print(first[1:])
 # Methods returning Boolean data
 print(first.startswith("H"))
 print(first.endswith("F"))
+
+# Built-in functions for numbers
+number = 7.12
+
+print(abs(number))
+print(round(number))
+print(round(number, 1))
+
+import math
+
+print(math.pi)
+print(math.sqrt(64))
+print(math.ceil(number))
+print(math.floor(number))
+
+# Casting a string to a number
+num_str = "1000"
+str_num = int(num_str)
+print(type(str_num))
