@@ -1,5 +1,11 @@
 import sys
 import random
+from enum import Enum
+
+class RPS(Enum):
+    ROCK = 1
+    PAPER = 2
+    SCISSORS = 3
 
 # Creating Rock, Paper, Scissors game with user input
 print("")
@@ -10,13 +16,13 @@ player = int(player_choice)
 if player < 1 or player > 3:
     sys.exit("You must enter 1, 2 or 3.")
 
-comp_choice = random.choice("123")
-computer = int(comp_choice)
-win_prompt = "🎉 You win!"
+computer_choice = random.choice("123")
+computer = int(computer_choice)
+win_prompt = "🎉 You win! 🎉"
 
 print("")
-print("You chose " + player_choice + ".")
-print("The computer chose " + comp_choice + ".")
+print("You chose " + str(RPS(player)).replace('RPS.','') + ".")
+print("The computer chose " + str(RPS(computer)).replace('RPS.','') + ".")
 print("")
 
 if player == 1 and computer == 3:
@@ -26,6 +32,6 @@ elif player == 2 and computer == 1:
 elif player == 3 and computer == 2:
     print(win_prompt)
 elif player == computer:
-    print("🤝 Tie game!")
+    print("🤝 Tie game! 🤝")
 else:
-    print("🤭 Computer wins!")
+    print("🤭 Computer wins! 🤭")
