@@ -1,7 +1,7 @@
 # Game to guess a random number between a range that the user selects
 import random
 
-while (True):
+while True:
     print("")
     print("Choose two numbers, and try to guess the number I choose between those numbers! 👍\n")
     num_lower = int(input("Pick a number between 1 and 100 for the lower limit: "))
@@ -20,9 +20,13 @@ while (True):
         elif user_guess < num_rand:
             print("Too low!")
     
+    print("")
     print(f"The correct number was {num_rand}!")
-    restart = input("Would you like to play again? ")
-    if restart.lower == "yes":
+    print("")
+    
+    restart = input("Would you like to play again? Type 'yes' to continue or 'quit' to exit: ")
+    restart_lower = restart.lower()
+    if restart_lower == "yes":
         continue
     else:
         quit()
