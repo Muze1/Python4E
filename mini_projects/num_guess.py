@@ -22,7 +22,7 @@ while (True):
     
     print(f"The correct number was {num_rand}!")
     restart = input("Would you like to play again? ")
-    if restart == "yes" or "Yes":
+    if restart.lower == "yes":
         continue
     else:
         quit()
