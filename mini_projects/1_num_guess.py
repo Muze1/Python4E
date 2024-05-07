@@ -1,4 +1,7 @@
 # Game to guess a random number between a range that the user selects
+# Concepts applied: Variables, loops, conditional statements, input/output
+# & random numbers
+
 import random
 
 while True:
